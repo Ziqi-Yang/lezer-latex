@@ -1,0 +1,23 @@
+{
+  "name": "lezer-latex",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A lezer-integrated Latex parser",
+  "keywords": [
+    "lezer",
+    "parser",
+    "grammar",
+    "latex"
+  ],
+  "author": "Meow King",
+  "license": "AGPL-3.0-or-later",
+  "devDependencies": {
+    "@lezer/generator": "^1.0.0"
+  },
+  "dependencies": {
+    "@lezer/lr": "^1.0.0"
+  },
+  "scripts": {
+    "prepare": "lezer-generator src/latex.grammar -o src/parser.js"
+  }
+}
