@@ -1,6 +1,6 @@
 {
   "name": "lezer-latex",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "A lezer-integrated Latex parser",
   "keywords": [
@@ -18,7 +18,8 @@
   "devDependencies": {
     "@codemirror/state": "^6.5.2",
     "@lezer/generator": "^1.0.0",
-    "rollup": "^3.0.0"
+    "rollup": "^3.0.0",
+    "@rollup-extras/plugin-copy": "^1.9.3"
   },
   "dependencies": {
     "@lezer/lr": "^1.0.0"

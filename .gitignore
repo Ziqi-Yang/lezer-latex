@@ -3,3 +3,4 @@
 /dist
 /src/latex.js
 /src/latex.terms.js
+.aider*

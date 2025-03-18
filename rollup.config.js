@@ -1,4 +1,5 @@
-import {lezer} from "@lezer/generator/rollup"
+import copy from '@rollup-extras/plugin-copy';
+import {lezer} from "@lezer/generator/rollup";
 
 export default {
     input: "./src/latex.grammar",
@@ -10,5 +11,8 @@ export default {
         file: "./dist/index.cjs"
     }],
     external: ["@lezer/lr"],
-    plugins: [lezer()]
+    plugins: [
+        lezer(),
+        copy('src/latex.terms.js')
+    ]
 }
