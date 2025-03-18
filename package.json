@@ -1,7 +1,6 @@
 {
   "name": "lezer-latex",
-  "version": "0.1.1",
-  "type": "module",
+  "version": "0.1.4",
   "description": "A lezer-integrated Latex parser",
   "keywords": [
     "lezer",
@@ -11,9 +10,16 @@
   ],
   "author": "Meow King",
   "license": "AGPL-3.0-or-later",
+  "files": ["dist"],
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "exports": {
-    "import": "./dist/index.js",
-    "require": "./dist/index.cjs"
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.mjs"
+    },
+    "./terms": "./dist/latex.terms.js"
   },
   "devDependencies": {
     "@codemirror/state": "^6.5.2",
