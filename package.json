@@ -11,13 +11,19 @@
   ],
   "author": "Meow King",
   "license": "AGPL-3.0-or-later",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
   "devDependencies": {
-    "@lezer/generator": "^1.0.0"
+    "@codemirror/state": "^6.5.2",
+    "@lezer/generator": "^1.0.0",
+    "rollup": "^3.0.0"
   },
   "dependencies": {
     "@lezer/lr": "^1.0.0"
   },
   "scripts": {
-    "prepare": "lezer-generator src/latex.grammar -o src/parser.js"
+    "build": "lezer-generator src/latex.grammar -o src/latex.js && rollup -c"
   }
 }

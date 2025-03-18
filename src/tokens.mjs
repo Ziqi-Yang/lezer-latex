@@ -99,7 +99,7 @@ import {
     EmphasisCtrlSeq,
     UnderlineCtrlSeq,
     SetLengthCtrlSeq,
-} from './latex.terms.mjs'
+} from './latex.terms.js'
 
 const MAX_ARGUMENT_LOOKAHEAD = 100
 

@@ -1,3 +1,5 @@
 /node_modules/
 /src/parser.*
 /dist
+/src/latex.js
+/src/latex.terms.js
